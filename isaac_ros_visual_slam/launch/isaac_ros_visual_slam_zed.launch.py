@@ -29,7 +29,7 @@ from launch_ros.descriptions import ComposableNode
 def generate_launch_description():
     """Launch file which brings up visual slam node configured for RealSense."""
     # The zed camera mode name. zed, zed2, zed2i, zedm, zedx or zedxm
-    camera_model = 'zed2'
+    camera_model = 'zed2i'
 
     visual_slam_node = ComposableNode(
         name='visual_slam_node',
@@ -111,7 +111,7 @@ def generate_launch_description():
     config_common = os.path.join(
         get_package_share_directory('isaac_ros_visual_slam'),
         'config',
-        'zed.yaml'
+        'zed2i.yaml'
     )
 
     # Robot State Publisher node
