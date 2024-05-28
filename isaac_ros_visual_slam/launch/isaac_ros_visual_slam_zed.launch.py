@@ -47,7 +47,7 @@ def generate_launch_description():
                     'odom_frame': 'odom',
                     'base_frame': camera_model+'_camera_center',
                     'input_imu_frame': camera_model+'_imu_link',
-                    'enable_imu_fusion': False,
+                    'enable_imu_fusion': True,
                     'gyro_noise_density': 0.000244,
                     'gyro_random_walk': 0.000019393,
                     'accel_noise_density': 0.001862,
@@ -111,7 +111,7 @@ def generate_launch_description():
     config_common = os.path.join(
         get_package_share_directory('isaac_ros_visual_slam'),
         'config',
-        'zed2i.yaml'
+        'zed2i_perception.yaml'
     )
 
     # Robot State Publisher node
