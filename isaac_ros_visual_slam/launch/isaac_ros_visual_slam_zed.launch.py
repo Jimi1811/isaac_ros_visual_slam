@@ -52,7 +52,7 @@ def generate_launch_description():
                     'gyro_random_walk': 0.000019393,
                     'accel_noise_density': 0.001862,
                     'accel_random_walk': 0.003,
-                    'calibration_frequency': 200.0,
+                    'calibration_frequency': 100.0,
                     'img_jitter_threshold_ms': 35.00
                     }],
         remappings=[('stereo_camera/left/image', 'zed_node/left/image_rect_color_rgb'),
